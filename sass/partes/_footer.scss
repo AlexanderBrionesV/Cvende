@@ -1,0 +1,16 @@
+@import "generales";
+footer {
+    background: red;
+    padding: 8px 0;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-items: center;
+    align-content: center;
+    p {
+        display: flex;
+    }
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 86vh; //91vh;
+}

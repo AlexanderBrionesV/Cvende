@@ -1,0 +1,49 @@
+@import "../partes/generales";
+@import "../recursos/colores";
+.header {}
+
+.menu {
+    // height: 40px;
+    background: $noche;
+    padding: 8px 0;
+    margin-bottom: 20px;
+    .contenedor-botones-menu {
+        display: none;
+        margin: auto;
+        width: 90%;
+        max-width: 1200px;
+        // ----------------------
+        // display: flex;
+        justify-content: space-between;
+        button {
+            font-size: $size-icon;
+            color: $diaPanel;
+            padding: 10px 20px;
+            border: 1px solid transparent;
+            cursor: pointer;
+            background: none;
+            &:hover {
+                border: 1px solid rgba(white, .4);
+            }
+        }
+        .btn-cerrar-h {
+            display: none;
+        }
+        .btn-cerrar-h.activo {
+            display: inline-block;
+        }
+    }
+    .cont-enlaces-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .enlaces a {}
+    }
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0; //91vh;
+}
