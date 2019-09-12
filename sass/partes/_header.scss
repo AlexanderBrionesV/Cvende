@@ -1,10 +1,9 @@
 @import "../partes/generales";
 @import "../recursos/colores";
-.header {}
-
 .menu {
     // height: 40px;
     background: $noche;
+    // background: red;
     padding: 8px 0;
     margin-bottom: 20px;
     .contenedor-botones-menu {
@@ -37,7 +36,45 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .enlaces a {}
+        .nav {
+            float: left;
+            .ul-padre {
+                display: grid;
+                grid-template-columns: repeat(4, auto);
+                grid-gap: 10px;
+                float: left;
+                align-items: center;
+                padding: 0;
+                // justify-items: center;
+                .list-padre {
+                    float: left;
+                    list-style: none;
+                    // a {
+                    //     display: block;
+                    // }
+                    .ul-hijo {
+                        display: none;
+                        // padding-top: 30px;
+                        background: $diaLetra;
+                        padding: 20px 0 20px 0;
+                        border-radius: 4px;
+                        .list-hijo {
+                            // display: none;
+                            display: block;
+                            // background: $noche;
+                            // a {}
+                            a {
+                                display: block;
+                            }
+                        }
+                    }
+                    &:hover .ul-hijo {
+                        // background: greenyellow;
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }
 

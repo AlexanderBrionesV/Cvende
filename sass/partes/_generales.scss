@@ -9,6 +9,7 @@ body {
     margin: auto;
     width: 90%;
     max-width: 1200px;
+    margin: 0 auto;
     // min-width: 340px;
 }
 
@@ -32,12 +33,29 @@ $size-img:30px;
     margin: 0;
 }
 
+.a-none {
+    text-decoration: none
+}
+
 .txt-enlaces {
     text-decoration: none;
     font-family: $lt-gruesa;
     color: $diaPanel;
     &:hover {
         color: $celesteIcono;
+    }
+}
+
+.a-hijo {
+    // justify-content: start;
+    // background: red;
+    padding: .8rem;
+    text-decoration: none;
+    font-family: $lt-fina;
+    font-weight: lighter;
+    color: $diaPanel;
+    &:hover {
+        background: rgba($celesteIcono, 0.2);
     }
 }
 
